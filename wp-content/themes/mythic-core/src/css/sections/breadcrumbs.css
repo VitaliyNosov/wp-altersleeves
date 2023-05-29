@@ -1,0 +1,17 @@
+@import '../components/chevrons.css';
+
+.breadcrumbs {
+    font-weight: 800;
+    color: var(--color-mg-purple);
+    font-size: 14px;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.breadcrumbs a {
+    color: var(--color-mg-orange);
+}
+
+.breadcrumbs a:hover {
+    color: var(--color-mg-purple);
+}

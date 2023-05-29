@@ -1,0 +1,176 @@
+
+.campaign-header {
+    color: #1D0927;
+}
+
+.campaign-header .info p {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.campaign-header .credits {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0 0 3px 1px #FC6A29;
+    box-shadow: 0 0 3px 1px #FC6A29;
+    font-size: 14px;
+}
+
+.campaign-header .credits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.campaign-header .available {
+    color: #FC6A29;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.campaign-group .quantity,
+.campaign-group .button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.campaign-group {
+    color: #1D0927;
+}
+
+.campaign-group .title h4, .credits-allocated, .countable-credits, .pack-notice {
+    color: #FC6A29;
+}
+
+.campaign-group .selection .countable-credits {
+    display: block;
+    font-size: 12px;
+}
+
+.credits-allocated, .pack-notice {
+    font-weight: 600;
+}
+
+.credits-allocated.top {
+    background: #1D0927;
+}
+
+.pledge-bar {
+    color: #1D0927;
+    font-weight: bold;
+}
+
+.pledge-bar.unlocked {
+    background: #FBD63B;
+}
+
+.stretch-bar {
+    background: #F7F7F7;
+    font-weight: 600;
+}
+
+
+.stretch-bar .stretch-start {
+    background: #FBD63B;
+}
+
+
+.campaign-lock {
+    font-size: 2rem;
+    color: #FC6A29;
+}
+
+.campaign-lock.unlocked {
+    color: #FBD63B;
+}
+
+.campaign-group .main {
+    background: #FFFFFF;
+}
+
+.campaign-group .info .contributor .image {
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    width: 90px;
+    height: 90px;
+    -webkit-box-shadow: 2px 2px 3px -1px rgb(191 191 191);
+    -moz-box-shadow: 2px 2px 3px -1px rgba(191, 191, 191, 1);
+    box-shadow: 2px 2px 3px -1px rgb(191 191 191);
+}
+
+.campaign-group .allocated ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.campaign-group .quantity {
+    background: #F7F7F7;
+}
+
+.campaign-group .quantity.allocated,
+.campaign-group .quantity.allocated .number {
+    background: #FC6A29;
+    color: #FFFFFF;
+}
+
+.campaign-group .quantity .number {
+    padding: 0.5rem 0.75rem;
+    width: auto;
+    border: 0;
+    background: #F7F7F7;
+    display: inline-block;
+    max-width: 50px;
+}
+
+
+.campaign-group .quantity .number::-webkit-outer-spin-button,
+.campaign-group .quantity .number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.campaign-group .quantity .number input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.campaign-group .quantity .action {
+    padding: 0 0.5rem;
+}
+
+.campaign-group .quantity .action:hover {
+    cursor: pointer !important;
+    background: #E6E6E5;
+}
+
+.campaign-group .info .contributor .name {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.campaign-group .selection * {
+    font-size: 14px;
+}
+
+.campaign-group .selection select {
+    height: 48px;
+}
+
+.campaign-group .stretch-rewards {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.campaign-group .stretch-rewards .pledged {
+    display: block;
+}
+
+.campaign-group .stretch-rewards img {
+    max-width: 100px;
+}

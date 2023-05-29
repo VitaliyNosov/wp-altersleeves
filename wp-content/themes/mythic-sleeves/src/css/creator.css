@@ -1,0 +1,180 @@
+/** Form Fields **/
+
+.field-wrapper {
+    margin: 1.5rem 0;
+}
+
+.header-label {
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+/** Tags **/
+.management-parent-tag {
+    font-weight: bold;
+}
+
+
+.management-tags {
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.management-tags .tag {
+    display: inline-block;
+    float: left;
+    padding: 0.5rem 1rem 0.5rem 0;
+    font-size: 14px;
+}
+
+.management-tags .tag a {
+    color: #333333;
+}
+
+
+.management-tags .tag a:hover {
+    text-decoration: none;
+}
+
+.management-tags .tag a.selected {
+    color: #2C9AC2;
+}
+
+/** Items **/
+
+.results.designs {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.result.design {
+    font-size: 13px;
+    padding: 1rem;
+    border-bottom: 1px solid #656363;
+}
+
+.result.design.selected,
+.result.design:hover {
+    background: rgba(0, 123, 255, 0.1);
+}
+
+.result.design:last-child {
+    border-bottom: 0;
+}
+
+.result.design .info {
+    border-right: 1px solid #656363;
+}
+
+.result.design .info .label {
+    font-weight: bold;
+}
+
+.result.design .variations {
+    padding: 0 1.5rem;
+}
+
+.result.design .variations .item {
+    margin-top: 0.5rem;
+}
+
+.result.design .variations .text {
+    padding: 0.25rem 0;
+}
+
+.results.cards.names {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.card.name {
+    border: 0;
+}
+
+.card.name a {
+    padding: 0.5rem;
+    border: 0;
+    border-bottom: 1px solid #C6C6C6
+}
+
+.card.name a:hover {
+    background: rgba(0, 123, 255, 0.1);
+}
+
+.results.sets.management.names {
+    padding: 0;
+    margin: 0;
+}
+
+.result.set.name {
+    display: inline-block;
+    padding: 0.5rem 2rem 0.5rem 0;
+}
+
+.loading-inline,
+.loading-upload,
+.loading-icon,
+.loading {
+    margin: 1rem auto;
+    border: 3px solid #F3F3F3; /* Light grey */
+    border-top: 3px solid #3498DB; /* Blue */
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 1s linear infinite;
+}
+
+.loading-inline {
+    margin: 0.5rem auto;
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.simple-overlay {
+    position: relative;
+    display: inline-block;
+}
+
+.simple-overlay > * {
+    width: 100%;
+    max-width: 200px;
+}
+
+
+.simple-overlay .printing {
+    width: 100%;
+    max-width: 200px
+}
+
+.results .printing img {
+    border: solid 3px transparent;
+}
+
+.results .printing.selected img {
+    border: solid 3px #19D819;
+}
+
+.simple-overlay .alter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+
+#upload-preview {
+    background: #E6E6E6;
+    width: auto;
+}

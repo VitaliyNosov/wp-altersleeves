@@ -1,0 +1,35 @@
+.cookies-container {
+    background: $violet-dark;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1640px;
+    margin: 0 auto;
+
+    .content {
+        max-width: 70%;
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.2;
+        margin: 0.5rem auto;
+
+        @include media("max", "md") {
+            max-width: 100%;
+            margin-bottom: 1rem;
+        }
+    }
+
+    @include media("min", "xxxl") {
+        left: calc((100% - 1640px) / 2);
+    }
+
+    @include media("max", "md") {
+        text-align: center;
+    }
+}

@@ -1,0 +1,92 @@
+#select_submit_card_search_res nav span:hover {
+    font-weight: bold;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    font-size: 75%;
+    color: #000000;
+}
+
+.figcaption_color {
+    background-color: greenyellow;
+    font-weight: bold;
+}
+
+
+/** James **/
+
+div.modal-full {
+    z-index: 999999;
+}
+
+div.modal-full > div {
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    z-index: 9999;
+    display: flex;
+    display: -webkit-flex;
+    margin: 0 auto;
+}
+
+div.modal-full .modal-content {
+    border: 0;
+    border-radius: 0;
+}
+
+
+div.modal-full .modal-body {
+    flex: 1;
+    padding: 0;
+}
+
+div.modal-full .modal-footer {
+    padding: 0 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.tabs-wrapper {
+    overflow-y: auto;
+    -ms-overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-x: hidden;
+}
+
+.submit-card-results {
+    padding: 1rem;
+    background-color: #EFEFEF;
+    border-radius: 1rem;
+}
+
+figure:hover .submit-img-land {
+    display: block;
+}
+
+.submit-img-land {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+figure:hover .figure-caption {
+    color: #0C88B4;
+}
+
+.card-display.select-glow {
+    -webkit-box-shadow: 0 0 5px 4px rgba(50, 168, 54, 1);
+    -moz-box-shadow: 0 0 5px 4px rgba(50, 168, 54, 1);
+    box-shadow: 0 0 5px 4px rgba(50, 168, 54, 1);
+}
+
+.disabled.select-grey {
+    filter: grayscale(100%);
+}

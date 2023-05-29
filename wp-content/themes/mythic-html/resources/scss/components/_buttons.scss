@@ -1,0 +1,153 @@
+.button {
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    padding: 10px 30px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.button-primary {
+    background: $primary;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.button-primary-gradient {
+    background: linear-gradient(90deg, $accent 0%, $primary 50%, $accent 100%);
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 0 0 7px 3px rgba(88, 88, 88, 0.281);
+
+    &:hover {
+        box-shadow: none;
+        transform: scale(0.98);
+        -webkit-transform: scale(0.98);
+        -moz-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+        -o-transform: scale(0.98);
+}
+}
+
+.button-icon-primary {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    box-shadow: 0 0 7px 3px rgba(88, 88, 88, 0.281);
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background: $primary;
+}
+
+.button-icon-primary-gradient {
+    border: none;
+    outline: none;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    box-shadow: 0 0 7px 3px rgba(88, 88, 88, 0.281);
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background: linear-gradient(120deg, $accent 0%, $primary 50%, $accent 100%);
+
+    &:hover {
+        box-shadow: none;
+    }
+
+    @include media("max", "sm") {
+        font-size: 18px;
+    }
+}
+
+.button-icon {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.button-icon-gray {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    color: $primary;
+    background: $light-gray;
+
+    &:hover {
+        color: $violet-dark;
+    }
+}
+
+.button-icon-white-bg {
+	@extend .button-icon-gray;
+
+	background-color: #fff;
+}
+
+.button-link {
+    cursor: pointer;
+    color: $primary;
+    text-transform: uppercase;
+    font-size: 16px;
+
+    &:hover {
+        color: $accent;
+    }
+}
+
+.button-dark {
+    background: $violet-dark;
+    color: #fff;
+    border-radius: 30px;
+
+    &:hover {
+        background: $primary;
+    }
+}
+
+.btn-file {
+	font-size: 11px;
+}
+
+.button-sm {
+    font-size: 16px;
+    padding: 5px 15px;
+}
+

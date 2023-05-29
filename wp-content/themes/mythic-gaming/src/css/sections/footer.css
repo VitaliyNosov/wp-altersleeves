@@ -1,0 +1,15 @@
+
+/** Footer **/
+
+footer {
+    font-size: 14px;
+    background-color: var(--color-mg-purple);
+}
+
+footer .copyright {
+    font-size: 10px;
+}
+
+footer .social-icons {
+    font-size:16px;
+}

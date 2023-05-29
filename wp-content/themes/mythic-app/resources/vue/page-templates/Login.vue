@@ -1,0 +1,155 @@
+<template>
+	<div>
+		<h1>Login</h1>
+
+		<div class="login-page">
+			<div class="login-page-body">
+				<div class="login-box" active-action="login">
+					<div class="site-logo" v-if="site_logo">
+						<img v-bind:src="site_logo" alt="Logo">
+					</div>
+					<div id="register-container" class="action-container register-container">
+						<div class="login-heading">
+							<div class="row align-items-center justify-content-center justify-content-md-between">
+								<div class="col-sm-auto"><div class="page-title">Registration</div></div>
+								<div class="col-sm-auto">
+									<span>Already with Us?</span>
+									<span class="button-link btn-change-action" data-target="login">Log in</span>
+								</div>
+							</div>
+						</div>
+						<form class="register-form row g-3">
+							<div class="col-md-6">
+								<input type="text" class="form-control" id="user_first_name" name="user_first_name"
+									   placeholder="first name *" v-model="register_first_name">
+							</div>
+							<div class="col-md-6">
+								<input type="text" class="form-control" id="user_last_name" name="user_last_name"
+									   placeholder="last name *" v-model="register_last_name">
+							</div>
+							<div class="col-12">
+								<input type="email" class="form-control" id="register_email" name="user_email"
+									   placeholder="email *" v-model="register_email">
+							</div>
+							<div class="col-12">
+								<div class="input-group">
+									<input type="password" class="form-control" id="register_pass" name="user_password"
+										   placeholder="password *" v-model="register_pass">
+									<div class="input-group-text">
+                                    <span class="button button-icon pass-view-toggler">
+                                        <i class="icon-eye"></i>
+                                    </span>
+									</div>
+								</div>
+								<div class="form-control-hint">Minimum length of 6 characters. </div>
+							</div>
+
+							<div class="col-12">
+								<div class="form-check">
+									<label class="form-check-label" for="terms">
+										<input class="form-check-input" type="checkbox" name="terms" id="terms">
+										<span class="form-check-control"></span>
+										<label class="form-check-label" for="terms">
+											By checking this box you agree to the Conditions of Use and Privacy Notice.
+										</label>
+									</label>
+								</div>
+							</div>
+							<div class="col-12">
+								<button type="submit" class="button button-primary-gradient"
+										v-on:click="userRegistration">Sign Up</button>
+							</div>
+						</form>
+					</div>
+
+					<div id="login-container" class="action-container login-container">
+						<div class="login-heading">
+							<div class="row align-items-center justify-content-center justify-content-md-between">
+								<div class="col-sm-auto"><div class="page-title">Entrance</div></div>
+								<div class="col-sm-auto">
+									<span>Not with us yet?</span>
+									<span class="button-link btn-change-action" data-target="register">Sign up</span>
+								</div>
+							</div>
+						</div>
+						<form class="login-form row g-3">
+							<div class="col-12">
+								<input type="email" class="form-control" id="login_email" name="user_email"
+									   placeholder="email *" v-model="login_email">
+							</div>
+							<div class="col-12">
+								<div class="input-group">
+									<input type="password" class="form-control" id="user_password" name="user_password"
+										   placeholder="password *" v-model="login_pass">
+									<div class="input-group-text">
+                                    <span class="button button-icon pass-view-toggler">
+                                        <i class="icon-eye"></i>
+                                    </span>
+									</div>
+								</div>
+								<div class="form-control-hint">Minimum length of 6 characters. </div>
+							</div>
+
+							<div class="col-12">
+								<div class="form-check">
+									<label class="form-check-label" for="user_remember">
+										<input class="form-check-input" type="checkbox" name="user_remember" id="user_remember">
+										<span class="form-check-control"></span>
+										<label class="form-check-label">
+											Remember me
+										</label>
+									</label>
+								</div>
+							</div>
+							<div class="col-12">
+								<button type="submit" class="button button-primary-gradient"
+										v-on:click="userLogin">Log In</button>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<script>
+	export default {
+		data: function () {
+			return {
+				site_logo: "",
+				login_email: "",
+				login_pass: "",
+				register_first_name: "",
+				register_last_name: "",
+				register_email: "",
+				register_pass: ""
+			}
+		},
+		mounted() {
+			$(".pass-view-toggler").on('click', function() {
+				var passwordField = $(this).parents('.input-group').find('input');
+				if ($(this).hasClass('show-password')) {
+					passwordField.attr("type", "password");
+				} else {
+					passwordField.attr("type", "text");
+				}
+				$(this).toggleClass('show-password');
+			});
+
+			$('.login-box .btn-change-action').on('click', function() {
+				var action = $(this).data('target');
+				$('.login-box').attr('active-action', action);
+			});
+		},
+		methods:{
+			userLogin: function () {
+
+			},
+			userRegistration: function () {
+
+			}
+		}
+	}
+</script>

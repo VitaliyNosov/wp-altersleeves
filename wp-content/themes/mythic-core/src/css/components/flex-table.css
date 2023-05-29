@@ -1,0 +1,51 @@
+.mc-table-flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.mc-table-flex-row p {
+    margin-bottom: 0;
+}
+
+.mc-table-flex-td {
+    overflow: hidden;
+    padding: 0 5px;
+}
+
+.mc-table-flex-td-1 {
+    width: 100%;
+}
+
+.mc-table-flex-td-2 {
+    width: 50%;
+}
+
+.mc-table-flex-td-3 {
+    width: 33.33%;
+}
+
+.mc-table-flex-td-4 {
+    width: 25%;
+}
+
+.mc-table-flex-td-5 {
+    width: 20%;
+}
+
+.mc-table-flex-td-6 {
+    width: 16.66%;
+}
+
+.mc-table-flex-td-7 {
+    width: 14.28%;
+}
+
+.mc-table-flex-td-8 {
+    width: 12.5%;
+}
+
+.mc-table-flex-header {
+    background-color: #313131;
+    color: #FFFFFF;
+}

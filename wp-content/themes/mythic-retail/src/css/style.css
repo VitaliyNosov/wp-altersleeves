@@ -1,0 +1,496 @@
+
+
+
+/** Footer **/
+footer {
+    color: #FFFFFF
+}
+
+footer .disclaimer {
+    font-size: 10px
+}
+
+@media only screen and (min-width: 768px) {
+    .mythic-frames .demo {
+        margin-bottom: -60px
+    }
+
+    footer .disclaimer {
+        font-size: 10px
+    }
+}
+
+footer a {
+    color: #FFFFFF
+}
+
+footer a:hover {
+    color: #FF6810
+}
+
+footer .social-icon a {
+    font-size: 20px
+}
+
+footer {
+    font-size: 14px;
+    background-color: var(--color-mg-purple);
+}
+
+
+/** calls to action **/
+
+.button,
+a.button,
+button[type="submit"],
+input[type="submit"] {
+    text-transform: uppercase !important;
+    border-radius: 40px !important;
+    color: #FFFFFF !important;
+    background: var(--gradient-mg-orange-horizontal) !important;
+    background-color: transparent !important;
+    font-weight: 900 !important;
+    border-color: transparent !important;
+    padding: 0.25rem 2rem !important;
+    margin: 1rem 0 !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    transition: background-color 1s !important;
+    position: relative !important;
+    line-height:initial !important;
+    font-size:16px !important;
+    text-align:center;
+}
+
+a.button {
+    display:block;
+}
+
+.button:hover,
+a.button:hover,
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+    color: #FFFFFF !important;
+}
+
+.button::before,
+.button::after,
+a.button::before,
+a.button::after,
+button[type="submit"]::before,
+button[type="submit"]::after,
+input[type="submit"]::before,
+input[type="submit"]::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    clear: both;
+}
+
+
+.button::before,
+a.button::before,
+button[type="submit"]::before,
+input[type="submit"]::before {
+    visibility: hidden;
+    left: 0;
+    border-right: 20px solid var(--color-mg-orange-gradient-start);
+    transition: left 0.4s, display 0.5s;
+}
+
+.button::after,
+a.button::after,
+button[type="submit"]::after,
+input[type="submit"]::after {
+    visibility: hidden;
+    right: 0;
+    border-left: 20px solid var(--color-mg-orange-gradient-start);
+    transition: right 0.4s;
+}
+
+.button:hover::before,
+a.button:hover::before,
+button[type="submit"]:hover::before,
+input[type="submit"]:hover::before {
+    visibility: visible;
+    left: -15px;
+}
+
+.button:hover::after,
+a.button:hover::after,
+button[type="submit"]:hover::after,
+input[type="submit"]:hover::after {
+    visibility: visible;
+    right: -15px;
+}
+
+
+
+header {
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0 3px 13px 0 rgba(30, 30, 30, 0.75);
+    -moz-box-shadow: 0 1px 4px 0 rgba(30, 30, 30, 0.75);
+    box-shadow: 0 1px 4px 0 rgba(30, 30, 30, 0.75);
+}
+
+header * {
+    white-space: nowrap;
+}
+
+header a, header a:not([href]):not([class]) {
+    color: #FC6A29;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+header a:hover {
+    color: #FC6A29;
+}
+
+/** Header -- Nav **/
+
+header nav > div {
+    position: absolute;
+    top: 100%;
+    left: 15px;
+    width: 100%;
+    z-index: 99;
+    -webkit-box-shadow: 4px 8px 8px -5px rgba(30, 30, 30, 1);
+    -moz-box-shadow: 4px 8px 8px -5px rgba(30, 30, 30, 1);
+    box-shadow: 4px 8px 8px -5px rgba(30, 30, 30, 1);
+    background: #FFFFFF;
+}
+
+header .nav > .menu-item a {
+    transition: 0.3s;
+}
+
+header .menu-item {
+    position: relative;
+    width: 100%;
+}
+
+header .menu-item a {
+    display: block;
+    padding: .5rem 1.5rem;
+    font-size: 14px;
+}
+
+header .menu-item i {
+    font-size: 1.5rem;
+}
+
+header .sub-menu {
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+    border-bottom: #FC6A29 2px solid;
+    padding-left: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    header nav > div {
+        position: relative;
+        top: initial;
+        left: initial;
+        width: initial;
+        z-index: initial;
+        -webkit-box-shadow: initial;
+        -moz-box-shadow: initial;
+        box-shadow: initial;
+    }
+
+    header .menu-item {
+        width: initial;
+    }
+
+    header .sub-menu {
+        position: absolute;
+        padding: 0;
+        background: #FFFFFF;
+    }
+
+    header .menu-item-has-children:hover .sub-menu {
+        display: block !important;
+    }
+
+}
+
+
+/** Footer **/
+footer {
+    color: #FFFFFF
+}
+
+footer .disclaimer {
+    font-size: 10px
+}
+
+@media only screen and (min-width: 768px) {
+    .mythic-frames .demo {
+        margin-bottom: -60px
+    }
+
+    footer .disclaimer {
+        font-size: 10px
+    }
+}
+
+footer a {
+    color: #FFFFFF
+}
+
+footer a:hover {
+    color: #FF6810
+}
+
+footer .social-icon a {
+    font-size: 20px
+}
+
+/** Forms **/
+body .wppb-form-field label, body #wppb-login-wrap .login-username label, body #wppb-login-wrap .login-password label {
+    width: 100%;
+    float: initial;
+    clear: both;
+}
+
+
+/* Pre order -- redo **/
+
+table {
+    width: 100%;
+}
+
+.block {
+    background: #FFFFFF;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.block-total {
+    background: var(--color-mg-purple);
+    color: #FFFFFF;
+}
+
+.product-remove {
+    font-weight: bold;
+    padding: 0 1rem 0 0.25rem;
+    font-size: 2rem;
+}
+
+.shipping ul,
+.woocommerce-checkout ul,
+.woocommerce-order-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main input[type=text],
+main input[type=password],
+main input[type=email],
+main input[type=number],
+main input[type=phone],
+main input[type=tel] {
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+    min-width: 60px;
+    border: 0;
+    background: #F7F7F7;
+    display: inline-block;
+}
+
+.wppb-form-field {
+    list-style:none;
+}
+
+.wppb-form-field input[type="text"], .wppb-form-field input[type="number"], .wppb-form-field input[type="email"], .wppb-form-field input[type="url"], .wppb-form-field input[type="password"], .wppb-form-field input[type="search"], .wppb-form-field select, .wppb-form-field textarea, .wppb-checkboxes, .wppb-radios, #wppb-login-wrap .login-username input, #wppb-login-wrap .login-password input {
+    width:100%;
+}
+
+.select2-selection {
+    border: 0 !important;
+}
+
+.select2-selection__rendered {
+    padding: 0.25rem 0.75rem;
+    width: 100%;
+    min-width: 60px;
+    border: 0;
+    background: #F7F7F7;
+}
+
+.woocommerce-form-login ul {
+    margin:0;
+    padding:0;
+}
+
+
+.woocommerce-cart-form img {
+    max-width: 60px !important;
+    max-height: 60px !important;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.woocommerce table tr {
+    vertical-align: top;
+}
+
+.woocommerce th,
+.woocommerce td {
+    padding: .5rem;
+}
+
+
+#order_review {
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+
+abbr {
+    text-decoration: none;
+}
+
+.create-account,
+.shipping-fields,
+.billing-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.woocommerce-account-fields label,
+.shipping-fields label,
+.billing-fields label {
+    font-size: 13px;
+    margin-bottom: 0.25rem;
+}
+
+.woocommerce-account-fields p,
+.shipping-fields p,
+.billing-fields p {
+    width: 100%;
+    padding: 0 1rem 0 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .shipping-fields p,
+    .billing-fields p {
+        width: 50%;
+    }
+}
+
+.required {
+    color: red;
+}
+
+.wc_payment_method {
+    position: relative;
+    margin: 1rem 0;
+    padding: 0 0 1rem 0;
+    border-bottom: 1px solid var(--color-bg);
+}
+
+.wc_payment_method input {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.wc_payment_method label {
+    font-weight: 600;
+    margin-left: 1.5rem;
+}
+
+.wc_payment_method label > a {
+    display: none;
+}
+
+.wc_payment_method label > img {
+    display: block;
+}
+
+.wc_payment_method .stripe-icon {
+    clear: right;
+    display: inline-block;
+}
+
+.payment_box {
+    background: var(--color-mg-orange);
+    width: 100%;
+    display: block;
+    padding: 0.5rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.wc-credit-card-form label {
+    display: none;
+}
+
+.woocommerce-terms-and-conditions-checkbox-text {
+    font-size:12px;
+}
+
+.woocommerce-cart .woocommerce-shipping-methods li {
+    font-size:1px;
+    position:relative;
+    min-height:24px;
+}
+
+.woocommerce-cart .woocommerce-shipping-methods label {
+    visibility:hidden;
+}
+
+.woocommerce-cart .woocommerce-shipping-methods label > span {
+    visibility:initial;
+    font-size:initial;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.my_account_orders a.button {
+    margin-top:0 !important;
+}
+
+.wc-item-meta li {
+    display:flex;
+}
+
+.wc-item-meta-label {
+    margin-right:10px;
+}
+
+.wc-item-meta p {
+    margin:0;
+}
+.woocommerce-cart .product-name .variation p {
+    margin-bottom: 0;
+    font-size:13px;
+}
+
+.attachment-woocommerce_thumbnail, .woocommerce-placeholder, .attachment-full {
+    max-width: 60px;
+    height: auto !important;
+
+}
+
+.description {
+    margin-left: 0.5rem;
+}
+
+.woocommerce-MyAccount-navigation-link--edit-account,
+.woocommerce-MyAccount-navigation-link--edit-address {
+    display:none;
+}

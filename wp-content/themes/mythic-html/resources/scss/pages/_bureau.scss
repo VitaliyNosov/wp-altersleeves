@@ -1,0 +1,81 @@
+.bureau-page-content {
+	 position: relative;
+	 background: $light-gray;
+
+	 .page-title {
+		 top: 10px;
+
+		 @include media("max", "md") {
+			 position: static !important;
+			 transform: none !important;
+			 padding-top: 20px;
+		 }
+	 }
+
+	.mc_transactions_data_action {
+		@include media("max", "md") {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 20px;
+		}
+	}
+
+	 .bureau-body-section-row {
+		 padding-bottom: 1rem;
+
+		 .bureau-body-section-container {
+			 padding: 2rem;
+			 background: #fff;
+			 height: 100%;
+
+			 &.bureau-body-section-container-transactions {
+				 .row:not(:last-child) {
+					 margin-bottom: 2rem;
+				 }
+			 }
+
+			 .section-title {
+				 font-size: 20px;
+				 line-height: 1.4;
+				 font-weight: 500;
+			 }
+
+			 .section-title-orange {
+				 @extend .section-title;
+
+				 color: $primary;
+			 }
+
+			 .btn-file {
+				 height: 30px;
+			 }
+
+			 .btn-actions {
+				 display: contents;
+			 }
+
+			 .mc_pie_chart_legend_span {
+				 width: 20px;
+				 height: 20px;
+				 min-width: 20px;
+				 min-height: 20px;
+				 display: block;
+				 border-radius: 50%;
+				 background-color: $dark-gray;
+
+				 &.mc_pie_chart_legend_span_red {
+					 background-color: #FF6384;
+				 }
+
+				 &.mc_pie_chart_legend_span_blue {
+					 background-color: #36A2EB;
+				 }
+
+				 &.mc_pie_chart_legend_span_yellow {
+					 background-color: #FFCD56;
+				 }
+			 }
+		 }
+	 }
+ }

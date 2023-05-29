@@ -1,0 +1,120 @@
+.general-page-content {
+    padding: 0 0 5rem;
+    background: $dark-gray;
+
+    .page-navigation {
+        background: $dark-gray;
+    }
+
+    p {
+        line-height: 21px;
+        margin-bottom: 1.5rem;
+    }
+
+    h1 {
+        font-size: 60px;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    
+    h2 {
+        font-size: 40px;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    
+    h3 {
+        font-size: 30px;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    
+    h4 {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 1rem 0 10px;
+    }
+
+    .text-section {
+        margin-bottom: 3rem;
+    }
+
+    @include media("max", "xxl") {
+        h1 {
+            font-size: 45px;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 30px;
+        }
+        
+        h3 {
+            font-size: 24px;
+        }
+        
+        h4 {
+            font-size: 20px;
+        }
+    }
+
+    @include media("max", "lg") {
+        padding-top: 1rem;
+
+        h1 {
+            font-size: 25px;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 22px;
+        }
+        
+        h3 {
+            font-size: 20px;
+        }
+        
+        h4 {
+            font-size: 18px;
+        }
+
+        .text-section {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.general-page-sidebar {
+    padding: 2rem 2rem 1rem;
+    background: #fff;
+    margin-bottom: 2rem;
+
+    .nav {
+        list-style-type: none;
+
+        .nav-item {
+            margin-bottom: 20px;
+
+            .nav-link {
+                text-transform: uppercase;
+
+                &.active,
+                &:hover {
+                    color: $accent;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+
+    @include media("min", "lg") {
+        padding: 3rem 1.5rem;
+        max-width: 260px;
+    }
+}

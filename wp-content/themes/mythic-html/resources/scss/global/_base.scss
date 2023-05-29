@@ -1,0 +1,149 @@
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $violet-dark;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.lg-container {
+    max-width: 1670px;
+    padding: 0 15px;
+    margin: 0 auto;
+} 
+
+.container-right {
+    margin-left: calc((100% - 1320px) / 2);
+
+    @include media("max", "xxl") {
+        margin-left: 2rem;
+    }
+
+    @include media("max", "md") {
+        margin-left: 0;
+    }
+}
+
+.text-dark-gray {
+    color: $dark-gray;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.bg-light-gray {
+    background-color: $light-gray!important;
+}
+
+.bg-dark-gray {
+    background-color: $dark-gray!important;
+}
+
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.text-primary {
+    color: $primary !important;
+}
+
+.display-mobile {
+    display: none;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.page-section {
+    padding: 6rem 0;
+
+    @include media("max", "md") {
+        padding: 3rem 0;
+    }
+}
+
+.page-title {
+    font-size: 36px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: normal;
+
+    @include media("max", "xxl") {
+        font-size: 28px;
+    }
+
+    @include media("max", "lg") {
+        font-size: 22px;
+        padding: 0 40px;
+    }
+}
+
+.page-section-title {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+
+    @include media("max", "md") {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    @include media("max", "sm") {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@include media("max", "md") {
+    .display-desktop {
+        display: none;
+    }
+
+    .display-mobile {
+        display: block;
+    }
+}
+
+// fix bootstrap
+@include media("min", "md") {
+    .col-md {
+        flex: 1 0 0%;
+    }
+}

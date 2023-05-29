@@ -1,0 +1,34 @@
+.mc-new-prod-share-form .mc-af-edit-existing-search {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.mc-existing-shares .mc-table-flex-td-4 {
+    width: 20%;
+}
+
+.mc-existing-shares .mc-table-flex-td-key-1,
+.mc-existing-shares .mc-table-flex-td-key-publisher,
+.mc-existing-shares .mc-table-flex-td-key-artist {
+    width: 35%;
+}
+
+.mc-prod-share-action:not(:last-child) {
+    margin-right: 10px;
+}
+
+.mc-new-prod-share-form #mc-af-edit-existing-search-input {
+    width: 100%;
+}
+
+#mc-prod-share-new-product-ids {
+    padding-left: 30px;
+}
+
+.mc-table-flex-td-key-product img {
+    width: 100px;
+}
+
+.mc-table-flex-td-key-product span {
+    display: block;
+}

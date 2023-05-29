@@ -1,0 +1,157 @@
+.resultCanvas {
+    position: absolute;
+    top: 120vw;
+    left: 120vh;
+}
+
+.preview {
+    border-right: 2px solid #CCCCCC;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.preview__outOfBoundsCanvas {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.preview__canvas {
+    background: white;
+    border: 2px solid #CCCCCC;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+
+.preview__canvasToolbar {
+    position: relative;
+}
+
+.preview__canvasToolbar--disabled {
+    pointer-events: none;
+}
+
+.preview__canvasToolbar--disabled:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: #FFFFFFCC;
+}
+
+.config {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.config__frameCode {
+    position: relative;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.config__frameCode--bordered {
+    border-bottom: 2px solid #CCCCCC;
+    border-radius: 0;
+}
+
+.config__frameCode--disabled {
+    pointer-events: none;
+}
+
+.config__frameCode--disabled:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: #FFFFFFCC;
+}
+
+
+.config__upload {
+    position: relative;
+    /*height:10vh; */
+    display: flex;
+    justify-content: center;
+}
+
+.config__upload--bordered {
+    border-bottom: 2px solid #CCCCCC;
+    border-radius: 0;
+}
+
+.config__upload--disabled {
+    pointer-events: none;
+}
+
+.config__upload--disabled:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: #FFFFFFCC;
+}
+
+
+.config__options {
+    flex-grow: 0;
+    /*    height: 80vh;*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+
+.config__scrollPane {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.config__options--bordered {
+    border-bottom: 2px solid #CCCCCC;
+    border-radius: 0;
+}
+
+.config__options--disabled {
+    pointer-events: none;
+}
+
+.config__options--disabled:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: #FFFFFFCC;
+}
+
+
+.btn i, .btn span {
+    pointer-events: none;
+}

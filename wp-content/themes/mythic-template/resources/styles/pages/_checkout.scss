@@ -1,0 +1,84 @@
+.checkout-body-section {
+    padding: 2rem 0 5rem;
+}
+
+.checkout-form {
+    margin-bottom: 2rem;
+}
+
+.checkout-form-section {
+    padding: 2rem;
+    background: #fff;
+    margin-bottom: 1rem;
+
+    .section-title {
+        font-size: 20px;
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-control {
+        margin-bottom: 1rem;
+        padding: 0.65rem 1rem;
+    }
+
+    .form-control-hint {
+        margin: 0;
+    }
+
+    .form-check {
+        @include media("max", "md") {
+            margin-top: 1rem;
+        }
+    }
+
+    .payment-col:first-of-type {
+        @include media("max", "xl") {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &.user-section {
+        .button-link {
+            @include media("max", "md") {
+                padding: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &.shipping-method-section {
+        .row {
+            margin-bottom: 1.5rem;
+        }
+
+        .shipping-option-description {
+            font-size: 13px;
+            color: #707070;
+            padding-left: 32px;
+            line-height: 16px;
+        }
+    }
+
+    &.payment-section {
+        .payment-select-row {
+            i {
+                font-size: 25px;
+                margin-right: 10px;
+            }
+
+            .form-check {
+                margin-bottom: 1.5rem;
+            }
+
+            .form-check-label {
+                align-items: center;
+            }
+        } 
+    }
+
+    @include media("max", "lg") {
+        padding: 1.5rem;
+    }
+}

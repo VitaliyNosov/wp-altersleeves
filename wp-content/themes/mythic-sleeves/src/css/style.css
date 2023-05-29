@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600&display=swap');
+/** Fonts **/
+
+body {
+    background-image: linear-gradient(
+            178deg, #FDFBFB 0%, #F6FDFF 100%);
+}
+
+body, button, input, optgroup, select, textarea {
+    font-family: 'Encode Sans', sans-serif;
+}
+
+a {
+    color: #2C9AC2;
+}
+
+
+/** Header **/
+header {
+    background: #313131;
+    z-index: 100;
+}
+
+.alterist__item {
+    position: relative;
+}
+
+.alterist__item img {
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    width: 25px;
+}
+
+.supporting_charity {
+    font-size: 10px;
+    position: relative;
+}
+
+.charity_image_cont {
+    float: left;
+    margin-right: 20px;
+}
+
+.charity_image_cont .charity_image {
+    max-height: 100px;
+}
+
+.charity_data_cont {
+    
+    margin-right: 20px;
+    float: left;
+}
+
+.charity_button_cont {
+    margin-top:15px;
+}
+
+.charity_button_info {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        -webkit-box-shadow: 0px 3px 13px 0px rgba(30, 30, 30, 0.75);
+        -moz-box-shadow: 0px 3px 13px 0px rgba(30, 30, 30, 0.75);
+        box-shadow: 0px 3px 13px 0px rgba(30, 30, 30, 0.75);
+    }
+}
+
+header * {
+    white-space: nowrap;
+}
+
+header .logo img {
+    max-height: 35px;
+}
+
+header a, header a:not([href]):not([class]) {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+header a:hover {
+    color: #8ECCE9;
+}
+
+
+/** Header -- Search **/
+
+header .results a, header .results a:not([href]):not([class]) {
+    color: #000000;
+}
+
+header .results a:hover, header .results a:not([href]):not([class]):hover {
+    color: #2C9AC2;
+}
+
+/** Header -- Nav **/
+
+header nav > div {
+    position: absolute;
+    top: 100%;
+    left: 15px;
+    width: 100%;
+    z-index: 999;
+    -webkit-box-shadow: 4px 8px 8px -5px rgba(30, 30, 30, 1);
+    -moz-box-shadow: 4px 8px 8px -5px rgba(30, 30, 30, 1);
+    box-shadow: 4px 8px 8px -5px rgba(30, 30, 30, 1);
+}
+
+header .hamburger-inner, header .hamburger-inner::before, header .hamburger-inner::after {
+    background-color: #FFFFFF;
+}
+
+header .nav > .menu-item a {
+    background-color: #313131;
+}
+
+header .menu-item {
+    position: relative;
+    background-color: #313131;
+    width: 100%;
+    list-style: none;
+}
+
+header .menu-item a {
+    padding: .5rem;
+    font-size: 14px;
+}
+
+header .sub-menu {
+    display: none;
+    top: 100%;
+    left: 0;
+    border-bottom: #2C9AC2 2px solid;
+    padding-left: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    header nav > div {
+        position: relative;
+        top: initial;
+        left: initial;
+        width: initial;
+        z-index: initial;
+        -webkit-box-shadow: initial;
+        -moz-box-shadow: initial;
+        box-shadow: initial;
+    }
+
+    header .menu-item {
+        width: initial;
+    }
+
+    header .sub-menu {
+        position: absolute;
+        padding: 0;
+    }
+
+    header .menu-item-has-children:hover .sub-menu {
+        display: block !important;
+    }
+
+}
+
+
+header .cart-icon i {
+    font-size: 20px;
+}
+
+header .cart-icon.has-items {
+    color: #2C9AC2;
+}
+
+/** Results **/
+
+.results .printing img, .results .alter img {
+    -webkit-border-radius: 4.75% / 3.5%;
+    border-radius: 4.75% / 3.5%;
+    -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.55);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.55);
+    margin: 0 auto;
+}
+
+
+.results-chevron {
+    padding: 0;
+}
+
+.results-chevron i {
+    font-size: 3rem;
+    padding: 0 1rem;
+}
+
+.results-chevron i:hover {
+    color: #2C9AC2;
+    cursor: pointer;
+}
+
+.discounted {
+    text-decoration: line-through;
+    color:red;
+}
+
+.mobile-banner {
+    display: none;
+}
+
+.mc-styled-form.sale_agreement label{
+    width: 100%;
+}
+
+
+
+a.nav-link:not(.active) {
+	border: none;
+}
+
+.possible_tags {
+	margin-left: 275px;
+}
+
+#wp-mc-promo-mailing-email-text-editor-container textarea {
+    min-height: 280px;
+}
+
+.coupon-form {
+	/*display: block !important;*/
+    padding: 0 40px;
+}
+
+.woocommerce-form-coupon-toggle {
+	display: none;
+}
+
+
+
+@media only screen and (max-width: 1137px) {
+	form.checkout_coupon.woocommerce-form-coupon {
+	    top: 510px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop-banner {
+        display: none;
+    }
+
+    .mobile-banner {
+        display: block;
+    }
+
+    .results-chevron {
+        position: fixed;
+        width: 50%;
+        bottom: 0;
+        z-index: 99;
+        text-shadow: 3px 3px 9px #1E1E1E;
+        font-size: 3rem;
+        color: #FFFFFF;
+        padding: 0 2rem;
+        background-color: rgba(0, 0, 0, 0.5)
+    }
+
+    .possible_tags {
+		margin-left: 15px;
+	}
+
+    .results-chevron i {
+
+    }
+
+    .results-chevron.left {
+        left: 0;
+    }
+
+
+    .results-chevron.right {
+        right: 0;
+        text-align: right;
+    }
+}
+
+.no-creations {
+    -webkit-filter: grayscale(100%);
+    filter: greyscale(100%);
+}
+
+
+/** Footer **/
+
+footer {
+    background: #313131;
+    -webkit-box-shadow: -1px -2px 14px -2px rgba(30, 30, 30, 30.75);
+    -moz-box-shadow: -1px -2px 14px -2px rgba(30, 30, 30, 0.75);
+    box-shadow: -1px -2px 14px -2px rgba(30, 30, 30, 30.75);
+}
+
+footer * {
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    color: #2C9AC2;
+}
+
+.footer-nav {
+    margin-top: 1rem;
+}
+
+.sale_agreement ul {
+    padding:0;
+}
+
+.sale_agreement li {
+    display:flex;
+    padding:0 .75rem;
+    font-size:12px;
+}
+
+.pulse-banner {
+    background: green;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}

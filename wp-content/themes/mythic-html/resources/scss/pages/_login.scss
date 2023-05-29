@@ -1,0 +1,39 @@
+.login-body {
+    overflow: hidden;
+
+    @include media("max", "xs") {
+        overflow: initial;
+    }
+}
+
+.login-page {
+    height: 100vh;
+    max-height: 100vh;
+    background: $light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    &-body {
+        max-width: 812px;
+        margin: 0 auto;
+        width: 100%;
+
+        @include media("max", "md") {
+            height: 100%;
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            background: #fff;
+        }
+    }
+
+    @include media("max", "md") {
+        padding: 15px;
+    }
+
+    @include media("max", "xs") {
+        max-height: unset;
+    }
+}

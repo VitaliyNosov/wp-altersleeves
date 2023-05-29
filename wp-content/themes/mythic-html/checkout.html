@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <title>Checkout</title>
+</head>
+<body class="woocommerce-cart">
+    <header class="site-header">
+        <div class="header-top">
+            <p>Use coupon AWESOME for 10% off</p>
+        </div>
+        <div class="lg-container">
+            <div class="header-wrapper navbar-expand-lg">
+                <div class="header-logo">
+                    <a href="/">
+                        <img src="assets/images/logo.png" alt="Logo GM">
+                    </a>
+                </div>
+                <div class="header-logo-mobile">
+                    <a href="/">
+                        <img src="assets/images/logo-mobile.svg" alt="Logo GM">
+                    </a>
+                </div>
+                <div id="header-search" class="header-search">
+                    <span class="main-search-icon">
+                        <i class="icon-search"></i>
+                    </span>
+                    <span id="close-autocomplete" class="close-autocomplete">&#x2715</span>
+                    <input type="search" class="main-search-field" name="header-search" id="header-search-input" placeholder="Search for our Staff Brands of Artists">
+                    <div id="search-autocomplete" class="autocomplete-container">
+                        <ul class="autocomplete-list">
+                            <li>
+                                <a href="#">
+                                    item 1 <span class="item-category">in Category</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    item 1 <span class="item-category">in Category</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    item 1 <span class="item-category">in Category</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    item 1 <span class="item-category">in Category</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    item 1 <span class="item-category">in Category</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    item 1 <span class="item-category">in Category</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    item 1 <span class="item-category">in Category</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-menu-toggler">
+                    <div class="burger collapsed" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="icon-hamburger"></i>
+                    </div>
+                </div>
+                <nav class="header-nav collapse navbar-collapse" id="main-navbar">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                Feed
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                Shop
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                About us
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-aside">
+                            <a href="#" class="menu-link">
+                                Become a Creator
+                            </a>
+                        </li>
+                        <li class="menu-item display-mobile">
+                            <a href="#" class="menu-link">
+                                Account
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mobile-currency display-mobile">
+                        <div class="currensy">USD</div>
+                    </div>  
+                </nav>
+                
+                <div class="header-actions-box">
+                    <a href="#" class="action-link action-account-link">
+                        <i class="icon-user"></i>
+                    </a>
+                    <a href="#" class="action-link action-cart-link">
+                        <i class="icon-cart"></i>
+                    </a>
+                    <a href="#" class="action-link action-currency">
+                        <span class="currency">usd</span>
+                    </a>  
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="site-content cart-page-content">
+        <div class="page-navigation">
+            <div class="lg-container d-flex justify-content-between">
+                <nav class="page-breadcrumbs">
+                    <a href="#">Home</a>
+                    <span class="devider">&gt;</span>
+                    Checkout
+                </nav>
+            </div>
+        </div>
+
+        <div class="checkout-body-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <form action="#" class="checkout-form">
+                            <div class="checkout-form-section user-section">
+                                <h3 class="section-title">User</h3>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id="last_name" name="last_name" placeholder="last name">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="email" class="form-control" id="user_email" name="user_email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="join-message">
+                                    Already with us?
+                                    <a href="#" class="button button-link">Log in</a>
+                                    or
+                                    <a href="#" class="button button-link">Sign up</a>
+                                    if not yet
+                                </div>
+                            </div>
+
+                            <div class="checkout-form-section shipping-address-section">
+                                <h3 class="section-title">Shipping address</h3>
+
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" id="shipping_company_name" name="shipping_company_name" placeholder="Company name">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" id="shipping_street_address" name="shipping_street_address" placeholder="Street adress">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id="shipping_zipcode" name="shipping_zipcode" placeholder="Zipcode">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id="shipping_city" name="shipping_city" placeholder="City">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id="shipping_country" name="shipping_country" placeholder="Country">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id="shipping_phone" name="shipping_phone" placeholder="Phone">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p><small>May be used to assist delivery</small></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check">
+                                            <label class="form-check-label" for="different_billing_check">
+                                                <input class="form-check-input" type="checkbox" name="different_billing_check" id="different_billing_check">
+                                                <span class="form-check-control"></span>
+                                                <label class="form-check-label" for="different_billing_check">
+                                                    Different billing address
+                                                </label>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check">
+                                            <label class="form-check-label" for="send_as_gift_check">
+                                                <input class="form-check-input" type="checkbox" name="send_as_gift_check" id="send_as_gift_check">
+                                                <span class="form-check-control"></span>
+                                                <label class="form-check-label" for="send_as_gift_check">
+                                                    Send as gift
+                                                </label>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkout-form-section shipping-method-section">
+                                <h3 class="section-title">Shipping method</h3>
+                                
+                                <div class="row">
+                                    <div class="col col-md-6">
+                                        <div class="form-check">
+                                            <label class="form-check-label" for="shipping_option_1">
+                                                <input class="form-check-input" type="checkbox" name="shipping_option_1" id="shipping_option_1">
+                                                <span class="form-check-control"></span>
+                                                <label class="form-check-label" for="shipping_option_1">
+                                                    Option 1
+                                                </label>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto col-md-6">
+                                        <span class="shipping-price">Free</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="shipping-option-description">Duis quis risus sit amet tellus volutpat fringilla.</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-md-6">
+                                        <div class="form-check">
+                                            <label class="form-check-label" for="shipping_option_2">
+                                                <input class="form-check-input" type="checkbox" name="shipping_option_2" id="shipping_option_2">
+                                                <span class="form-check-control"></span>
+                                                <label class="form-check-label" for="shipping_option_2">
+                                                    Option 2
+                                                </label>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto col-md-6">
+                                        <span class="shipping-price">$2</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="shipping-option-description">Mauris feugiat semper felis. Praesent euismod sagittis magna quis tempor.</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-md-6">
+                                        <div class="form-check">
+                                            <label class="form-check-label" for="shipping_option_3">
+                                                <input class="form-check-input" type="checkbox" name="shipping_option_3" id="shipping_option_3">
+                                                <span class="form-check-control"></span>
+                                                <label class="form-check-label" for="shipping_option_3">
+                                                    Option 3
+                                                </label>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto col-md-6">
+                                        <span class="shipping-price">$8</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="shipping-option-description">Mauris ac consequat enim, in placerat lacus. Integer lobortis iaculis diam, eget interdum ante commodo sed.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkout-form-section payment-section">
+                                <h3 class="section-title">Payment method</h3>
+
+                                <div class="row payment-select-row">
+                                    <div class="col-xl-6 payment-col">
+                                        <div class="form-check">
+                                            <label class="form-check-label" for="payment_method_card">
+                                                <input class="form-check-input" type="checkbox" name="payment_method_card" id="payment_method_card">
+                                                <span class="form-check-control"></span>
+                                                <label class="form-check-label" for="payment_method_card">
+                                                    <i class="icon-card"></i>
+                                                    Credit Card
+                                                </label>
+                                            </label>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="credit_card_owner" name="credit_card_owner" placeholder="Owner*">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="credit_card_number" name="credit_card_number" placeholder="Card Number*">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="credit_card_expire" name="credit_card_expire" placeholder="Expiry Date*">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" id="credit_card_cvv" name="credit_card_cvv" placeholder="CVC/CVV*">
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-control-hint dark">Payments are secure and encrypted</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 payment-col">
+                                        <div class="form-check">
+                                            <label class="form-check-label" for="payment_method_paypal">
+                                                <input class="form-check-input" type="checkbox" name="payment_method_paypal" id="payment_method_paypal">
+                                                <span class="form-check-control"></span>
+                                                <label class="form-check-label" for="payment_method_paypal">
+                                                    <i class="icon-paypal"></i>
+                                                    Pay Pal
+                                                </label>
+                                            </label>
+                                        </div>
+                                        <div class="row align-items-center h-50">
+                                            <div class="col-12">
+                                                <div class="form-control-hint">Direct payment with your PayPal account.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkout-form-section comments-section">
+                                <h3 class="section-title">Comments</h3>
+
+                                <textarea class="form-control" id="order_comments" name="order_comments" rows="4" placeholder="Message"></textarea>
+                                <div class="form-control-hint">You can leave any comment or delivery instructions</div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="summary-sidebar">
+                            <div class="cart-summary sidebar-box">
+                                <div class="box-title">Summary</div>
+                                <div class="summary-table">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <span>Subtotal</span>
+                                        </div>
+                                        <div class="col-4">
+                                            <span>$35</span> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <span>Shipping</span> 
+                                        </div>
+                                        <div class="col-4">
+                                            <span>FREE</span>
+                                        </div>
+                                        <div class="col">
+                                            <p class="decription">Based on USA Address. You will be able to choose Shipping Method in next step.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-coupon sidebar-box">
+                                <label for="" class="form-control-label">Enter coupon code</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="cart_coupon" name="cart_coupon">
+                                    <div class="input-group-text">
+                                        <span class="button button-icon">
+                                            <i class="icon-remove"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="coupon-result">Success!</div>
+
+                                <div class="coupon-discount row">
+                                    <div class="col-8">Discount</div>
+                                    <div class="col-4"><span class="discount-value">$2.5</span></div>
+                                </div>
+                            </div>
+                            <div class="terms-fields sidebar-box">
+                                <div class="form-check">
+                                    <label class="form-check-label" for="terms">
+                                        <input class="form-check-input" type="checkbox" name="terms" id="terms">
+                                        <span class="form-check-control"></span>
+                                        <label class="form-check-label" for="terms">
+                                            <span>
+                                                I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                                            </span>
+                                        </label>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label" for="newsletter_signup">
+                                        <input class="form-check-input" type="checkbox" name="newsletter_signup" id="newsletter_signup">
+                                        <span class="form-check-control"></span>
+                                        <label class="form-check-label" for="newsletter_signup">
+                                            Send me news, offers and anything else I don't want to miss.
+                                        </label>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="cart-total sidebar-box">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="box-title">Total</div>
+                                    </div>
+                                    <div class="col-4 text-right">
+                                        $21.5
+                                    </div>
+                                </div>
+                                <button class="button button-primary-gradient proceed-to-checkout-submit">Proceed to checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+        
+    </main>
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-auto">
+                        <div class="footer-logo">
+                            <a href="/" class="link-home">
+                                <img src="assets/images/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-2">
+                        <nav class="footer-nav">
+                            <ul class="menu">
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">Feed</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">About Us</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">Blog</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">Contaact</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">Gift Card</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <nav class="footer-nav">
+                            <ul class="menu">
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">Shipping</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">Returns</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">FAQ</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">Terms</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">Legal Information</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-2">
+                        <nav class="footer-nav nav-primary">
+                            <ul class="menu">
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">Alter Sleeves</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">Mithic Frames</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">3rd Brand</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-social">
+                            <div class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                            </div>
+                            <div class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="icon-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="icon-instagram"></i>
+                                </a>
+                            </div>
+                            <div class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="icon-youtube"></i>
+                                </a>
+                            </div>
+                            <div class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="icon-twitch"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="subscribe-box">
+                            <div class="subscribe-title">Subscribe to be up to date</div>
+                            <form action="#">
+                                <input class="form-field" type="email" id="subscribe-email" title="Your email" placeholder="Your email" autocomplete="email" required>
+                                <button type="submit" class="button button-primary">I'm In</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-payments-line">
+                            <div class="payment-item">
+                                <img src="assets/images/partners/AMEX.svg" alt="MC">
+                            </div>
+                            <div class="payment-item">
+                                <img src="assets/images/partners/Visa.svg" alt="MC">
+                            </div>
+                            <div class="payment-item">
+                                <img src="assets/images/partners/MC.svg" alt="MC">
+                            </div>
+                            <div class="payment-item">
+                                <img src="assets/images/partners/Amazon.svg" alt="MC">
+                            </div>
+                            <div class="payment-item">
+                                <img src="assets/images/partners/SagePay.svg" alt="MC">
+                            </div>
+                            <div class="payment-item">
+                                <img src="assets/images/partners/PP.svg" alt="MC">
+                            </div>
+                            <div class="payment-item">
+                                <img src="assets/images/partners/Verve.svg" alt="MC">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="site-copiright">© 2021 Mythic Gaming. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/all.js"></script>
+</body>
+</html>

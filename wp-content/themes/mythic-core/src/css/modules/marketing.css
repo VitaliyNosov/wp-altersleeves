@@ -1,0 +1,29 @@
+.campaign-url-builder {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.campaign-url-builder label {
+    font-weight: bold;
+}
+
+.open-campaign-url-builder,
+.close-campaign-url-builder {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: red;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.close-campaign-url-builder:hover,
+.close-campaign-url-builder:hover {
+    cursor: pointer;
+}

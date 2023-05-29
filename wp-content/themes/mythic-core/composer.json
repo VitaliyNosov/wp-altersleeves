@@ -1,0 +1,22 @@
+{
+    "name": "mythic-gaming/mythic-core",
+    "description": "The Mythic Applications core",
+    "platform": {
+        "php": "7.4"
+    },
+    "require": {
+        "components/font-awesome": "^5.15",
+        "dompdf/dompdf": "^0.8.6",
+        "facebook/graph-sdk": "^5.7",
+        "facebook/php-business-sdk": "10.0.0",
+        "intervention/image": "^2.5",
+        "sendinblue/api-v3-sdk": "7.x.x",
+        "endroid/qr-code": "^4.1",
+        "avplab/php-html-builder": "^2.0",
+        "theiconic/name-parser": "^1.2",
+        "wrapi/slack": "*",
+        "menarasolutions/geographer": "^0.3.10",
+        "wildbit/postmark-php": "^4.0",
+        "fresh/datetime": "^1.7"
+    }
+}

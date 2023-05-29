@@ -1,0 +1,370 @@
+/** bootstrap fixes **/
+
+.container {
+    max-width: 1240px;
+}
+
+
+/** bootstrap tags **/
+
+.bootstrap-tagsinput {
+    position: relative;
+    display: inline-block;
+    color: #555555;
+    vertical-align: middle;
+    width: 100%;
+    line-height: 22px;
+    cursor: text;
+    padding-top: 38px;
+}
+
+.bootstrap-tagsinput input {
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0;
+    max-width: inherit;
+    width: 100%;
+    border: 0;
+    border-radius: .25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 38px;
+}
+
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+    color: #777777;
+    opacity: 1;
+}
+
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+    color: #777777;
+}
+
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+    color: #777777;
+}
+
+.bootstrap-tagsinput input:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.bootstrap-tagsinput .badge {
+    margin: 0.25rem;
+    padding: 5px 8px;
+}
+
+.bootstrap-tagsinput .badge [data-role="remove"] {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.bootstrap-tagsinput .badge [data-role="remove"]:after {
+    content: "×";
+    padding: 0 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    font-size: 13px
+}
+
+.bootstrap-tagsinput .badge [data-role="remove"]:hover:after {
+    background-color: rgba(0, 0, 0, 0.62);
+}
+
+.bootstrap-tagsinput .badge [data-role="remove"]:hover:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+/** dashboard **/
+
+.dashboard nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.dashboard nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dashboard nav ul a {
+    padding: 0.5rem 1rem;
+    display: block;
+    font-weight: 600;
+}
+
+.dashboard nav ul .is-active a {
+    color: var(--color-mg-purple);
+    background: #FFFFFF;
+}
+
+.dashboard *[role="alert"] {
+    font-weight: 700;
+    margin: 0.5rem 0;
+    border-bottom: 1px solid var(--color-bg);
+}
+
+
+/** iframes **/
+.iframe-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/** forms and form fields **/
+.form-field {
+    margin-bottom: 1rem;
+}
+
+/** loaders **/
+.load-icon {
+    display: none;
+}
+
+.load-icon.spinner {
+    border-top: 3px solid #3498DB;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: loader-spinner 1s linear infinite;
+}
+
+.load-icon.spinner.lg {
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes loader-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-animation {
+    display: none;
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+
+.loader-animation-active {
+    display: inline-block;
+}
+
+.loader-animation div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+    border: 3px solid #BCBDBD;
+    border-radius: 50%;
+    animation: loader-animation 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #BCBDBD transparent transparent transparent;
+}
+
+.loader-animation div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.loader-animation div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.loader-animation div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes loader-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/** blocks **/
+
+.block.login {
+    min-width: 500px;
+}
+
+/** header **/
+
+.hamburger-wrapper {
+    margin-top: 6px;
+}
+
+/** structure **/
+.wrapper {
+    position: relative;
+}
+
+
+/** tool tips **/
+.tt-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+    cursor: pointer;
+}
+
+.tt-suggestion {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.tt-suggestion:hover,
+.tt-suggestion:focus {
+    color: #FFFFFF;
+    text-decoration: none;
+    outline: 0;
+    background-color: #428BCA;
+}
+
+
+/** woocommerce **/
+
+
+.woocommerce-password-strength {
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+.woocommerce-password-strength.strong {
+    color: green;
+}
+
+.woocommerce-password-strength.medium {
+    color: orange;
+}
+
+.woocommerce-password-strength.short,
+.woocommerce-password-strength.weak {
+    color: red;
+}
+
+.sidebar {
+    background:#fff;
+}
+
+.woocommerce-widget-layered-nav-list,
+.product-categories,
+.products {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.current-cat {
+    font-weight:600;
+}
+
+.current-cat::before {
+    content: '\276F';
+    padding-right:10px;
+    color: var(--color-mg-orange);
+}
+
+.products img {
+    width:100%;
+    height:auto;
+}
+.page-numbers {
+    padding:0;
+    margin:0;
+}
+
+.page-numbers li {
+    display:inline-block;
+}
+
+.woocommerce-widget-layered-nav-list .count {
+    display:none;
+}
+
+.woocommerce-widget-layered-nav-list__item--chosen {
+    font-weight:600;
+}
+
+.products .woocommerce-Price-amount {
+    margin:0.5rem 0;
+    font-size:16px;
+    font-weight:600;
+    display:inline-block;
+}
+
+.woocommerce-loop-product__title {
+    font-size:16px;
+}
+
+.loop-thumbnail {
+    display:flex;
+    align-items:center;
+}
+
+.summary-wrapper > .price {
+    display:none;
+}
+
+.product_cat-playmat .summary-wrapper > .playmat-price {
+	display:block;
+}
+
+.woocommerce-variation-description {display: none;}
+
+
+
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: var(--color-mg-orange);
+}
+
+.nav-link {
+    color: var(--color-mg-orange);
+}
+
+
+.wppb-form-field {
+    list-style:none;
+}
+
+.wppb-form-field input[type="text"], .wppb-form-field input[type="number"], .wppb-form-field input[type="email"], .wppb-form-field input[type="url"], .wppb-form-field input[type="password"], .wppb-form-field input[type="search"], .wppb-form-field select, .wppb-form-field textarea, .wppb-checkboxes, .wppb-radios, #wppb-login-wrap .login-username input, #wppb-login-wrap .login-password input {
+    width:100%;
+}

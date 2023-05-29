@@ -1,0 +1,238 @@
+.cart-page-content {
+    background: $dark-gray;
+
+    .page-navigation {
+        background: $dark-gray;
+    }
+
+    .banner-section {
+        margin-bottom: 3rem;
+    }
+
+    .cart-body-section {
+        padding-bottom: 5rem;
+
+        @include media("max", "md") {
+            padding-bottom: 3rem;
+        }
+    }
+
+    .page-title {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: normal;
+        margin-bottom: 1.5rem;
+
+        @include media("max", "md") {
+            font-size: 16px;
+        }
+    }
+
+    .cart-products {
+        background: #fff;
+        padding: 1rem 2rem;
+        margin-bottom: 15px;
+
+        @include media("max", "md") {
+            padding: 1rem;
+        }
+    }
+
+    .cart-policy-links {
+        a {
+            color: $primary;
+        }
+    }
+
+    .recommendations-section:nth-child(odd) {
+        background: $light-gray;
+    }
+
+    .cart-sidebar {
+        @include media("max", "xl") {
+            margin-top: 1rem;
+        }
+    }
+
+    .mobile-proceed-checkout {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 8;
+        background: $violet-dark;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .total {
+            color: #fff;
+        }
+
+        .button {
+            width: 65%;
+        }
+    }
+
+    @include media("max", "lg") {
+        padding-top: 1rem;
+    }
+}
+
+.products-table{
+    &-header {
+        margin-bottom: 2rem;
+    }
+
+    &-row {
+        margin-bottom: 1.5rem;
+    }
+
+    .remove-product {
+        .button {
+            color: $primary;
+            font-size: 15px;
+
+            &:hover {
+                color: $accent;
+            }
+        }   
+    }
+
+    .product-thumbnail {
+        width: 90px;
+
+        @include media("max", "md") {
+            width: 55px;
+        }
+    }
+
+    .product-id {
+        font-weight:lighter;
+        font-size: 13px;
+
+        @include media("max", "md") {
+            font-size: 12px;
+        }
+    }
+
+    .product-name {
+        font-size: 14px;
+        padding-right: 55%;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: normal;
+
+        @include media("max", "xl") {
+            padding-right: 0;
+        }
+
+        @include media("max", "md") {
+            font-size: 12px;
+        }
+    }
+
+    .quantity-input {
+        padding-left: 10px;
+
+        @include media("max", "md") {
+            padding-left: 0;
+        }
+    }
+
+    .units {
+        text-transform: uppercase;
+        color: $primary;
+
+        @include media("max", "md") {
+            font-size: 12px;
+        }
+    }
+
+    .price {
+        padding-left: 15px;
+        padding-top: 10px;
+
+        @include media("max", "md") {
+            padding-left: 0;
+        }
+    }
+
+    .site-url {
+        color: $primary;
+        font-size: 13px;
+        margin-top: 1rem;
+    }
+
+    .btn-remove-product {
+        @include media("max", "md") {
+            padding: 0;
+            font-size: 11px!important;
+        }
+    }
+
+    @include media("max", "md") {
+        .quantity-input .quantity-field-wrap {
+            width: 100px;
+
+            input.qty {
+                width: 50px;
+                font-size: 16px;
+            }
+
+            .qty-nav {
+                width: 50px;
+            }
+
+        }
+        
+        .remove-product {
+            padding-top: 20px;
+        }
+    }
+}
+
+.banner {
+    padding: 3.5rem 1rem;
+    background: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .banner-text {
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: 300;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        line-height: 1.2;
+
+
+        @include media("max", "xl") {
+            font-size: 26px;
+        }
+
+        @include media("max", "sm") {
+            font-size: 16px;
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        opacity: 0.8;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    @include media("max", "sm") {
+        padding: 1rem;
+    }
+}

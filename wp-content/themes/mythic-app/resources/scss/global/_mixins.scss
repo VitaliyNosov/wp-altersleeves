@@ -1,0 +1,9 @@
+@mixin media($minmax, $media) {
+    @each $breackpoint, $resolution in $breackpoints {
+        @if $media == $breackpoint {
+        @media only screen and (#{$minmax}-width: $resolution) {
+            @content;
+        }
+        }
+    }
+}

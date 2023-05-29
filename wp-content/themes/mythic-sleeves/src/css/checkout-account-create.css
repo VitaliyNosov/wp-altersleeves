@@ -1,0 +1,5 @@
+form.woocommerce-checkout .create-account #account_password_field .show-password-input:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

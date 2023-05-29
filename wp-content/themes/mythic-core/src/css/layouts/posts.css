@@ -1,0 +1,12 @@
+
+.page .content {
+    padding: 2rem 1rem;
+    background: #FFFFFF;
+}
+
+@media only screen and (min-width: 768px) {
+    .page .content {
+        padding: 2rem;
+        background: #FFFFFF;
+    }
+}

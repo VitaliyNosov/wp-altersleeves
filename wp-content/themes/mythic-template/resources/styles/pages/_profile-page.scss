@@ -1,0 +1,244 @@
+.profile-page-content {
+    .page-navigation {
+        color: #fff;
+        background: transparent;
+    }
+
+    .profile-heading {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 10rem;
+    }
+
+    .profile-main {
+        text-align: center;
+
+        .profile-photo {
+            margin-top: -150px;
+            margin-bottom: 2rem;
+
+            @include media("max", "lg") {
+                margin: -105px auto 2rem;
+                max-width: 180px;
+            }
+        }
+
+        .profile-name {
+            font-size: 60px;
+            line-height: 1.3;
+            margin-bottom: 1.5rem;
+            font-weight: normal;
+
+            @include media("max", "lg") {
+                font-size: 32px;
+            }
+
+            @include media("max", "md") {
+                font-size: 25px;
+            }
+        }
+
+        .profile-socials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+
+            .social-item {
+                margin: 0 10px;
+
+                a {
+                    font-size: 30px;
+                    color: $primary;
+
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+            }
+        }
+
+        .profile-description {
+            font-size: 20px;
+            line-height: 1.4;
+
+            @include media("max", "lg") {
+                font-size: 18px;
+            }
+        }
+        
+        padding: 1rem 0 2rem;
+    }
+
+    .profile-featured-works {
+        padding: 3rem 0;
+    }
+
+    .featured-work {
+        padding: 2rem 8%;
+        box-shadow: 0 0 15px 3px rgb(255 106 20 / 30%);
+
+        .work-thumbnail {
+            max-width: 300px;
+
+            @include media("max", "lg") {
+                max-width: 160px;
+                margin: 0 auto 2rem;
+            }
+        }
+
+        .work-title {
+            text-transform: uppercase;
+            font-size: 24px;
+            margin-bottom: 2rem;
+            line-height: 1.3;
+
+            @include media("max", "lg") {
+                font-size: 16px;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .work-description {
+            margin-bottom: 2rem;
+
+            @include media("max", "lg") {
+                margin-bottom: 1rem;
+            }
+        }
+
+        @include media("max", "lg") {
+            .button-link {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    .featured-works-slider {
+        overflow: hidden;
+        padding: 20px;
+        margin-left: -20px;
+
+        .slick-list {
+            margin: 0 -15px;
+            overflow: initial;
+        }
+
+        .slick-slide {
+            padding: 0 15px;
+        }
+
+        .slick-track {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        @include media("max", "md") {
+            margin-left: 0;
+        }
+    }
+
+    .profile-favourite-section {
+        padding: 3rem 0;
+        background: $dark-gray;
+    }
+
+    .profile-bestsellers-section,
+    .profile-artists-section {
+        padding: 3rem 0;
+        background: $light-gray;
+    }
+
+    .profile-see-more-banner {
+        padding: 6rem 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: $violet-dark;
+            opacity: 0.6;
+            z-index: 1;
+        }
+
+        .banner-content {
+            background: #fff;
+            padding: 5rem 0;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+
+            .banner-title {
+                font-size: 36px;
+                margin-bottom: 3rem;
+                line-height: 1.3;
+
+                @include media("max", "lg") {
+                    font-size: 20px;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .actions-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .button {
+                    width: 100%;
+                    max-width: 260px;
+                    margin: 0 15px;
+                }
+
+                @include media("max", "md") {
+                    flex-direction: column;
+
+                    .button {
+                        width: 100%;
+                        margin: 1rem 0;
+                    }
+                }
+            }
+
+            @include media("max", "lg") {
+                padding: 3rem 0;
+            }
+        }
+
+        @include media("max", "lg") {
+            padding: 5rem 0;
+        }
+    }
+
+    .profile-artists-slider {
+        overflow: hidden;
+
+        .slick-list {
+            margin: 0 -7px;
+        }
+
+        .slick-slide {
+            padding: 0 7px;
+        }
+
+        .slick-track {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        @include media("max", "md") {
+            padding: 0 0 0 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+
+/** Select2 fields **/
+
+.select2-selection--multiple {
+    height: 40px;
+}
+
+.select2-selection--multiple .select2-selection__rendered {
+    position: absolute;
+    height: 100%;
+}
+
+.select2-selection--multiple .select2-selection__choice__remove {
+    margin: 0;
+}
+
+.select2-selection--multiple .select2-selection__choice {
+    height: 28px;
+}
+
+.select2-selection--multiple .select2-search__field {
+    height: 38px !important;
+    margin: 0 !important;
+    padding: 7px !important;
+}

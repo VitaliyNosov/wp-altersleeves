@@ -1,0 +1,11 @@
+h1, h2, h3, h4, h5, h6, a:hover {
+    color: var(--color-mg-purple);
+}
+
+a {
+    color: var(--color-mg-orange);
+}
+
+a:hover {
+    color: var(--color-mg-purple);
+}

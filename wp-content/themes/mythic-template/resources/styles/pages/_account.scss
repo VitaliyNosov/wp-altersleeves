@@ -1,0 +1,137 @@
+.account-page-content {
+    background: $dark-gray;
+
+    .page-navigation {
+        background: $dark-gray;
+    }
+    
+    .account-body {
+        padding: 1rem 0 4rem;
+
+        @include media("max", "lg") {
+            padding: 2rem 0;
+        }
+    }
+
+    .account-tabs-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav-tabs {
+            display: inline-flex;
+            width: 100%;
+        }
+
+        @include media("max", "lg") {
+            .nav-tabs .nav-item .nav-link,
+            a {
+                font-size: 12px;
+            }
+            
+        }
+    }
+
+    .account-tabs-content {
+        padding: 1rem 2rem;
+        background: #fff;
+
+        @include media("max", "lg") {
+            padding: 1rem 0;
+        }
+    }
+
+    .nav-tabs {
+        list-style-type: none;
+        display: flex;
+
+        .nav-item {
+            width: 17%;
+            color: $primary;
+
+            .nav-link {
+                cursor: pointer;
+                padding: 15px;
+                border: none;
+                font-size: 16px;
+                background: $light-gray;
+                color: $primary;
+                width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+
+                &.active,
+                &:hover {
+                    background: $primary;
+                    color: #fff;
+                }
+            }
+
+            @include media("max", "sm") {
+                width: auto;
+            }
+        }
+    }
+
+    .nav-tabs-column {
+        .nav-item {
+            width: 100%;
+        }
+    }
+
+    .tab-content-title {
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+    
+
+    .nav-tabs-column {
+        .nav-item {
+            .nav-link {
+                color: $violet-dark;
+    
+                &.active,
+                &:hover {
+                    background: #fff;
+                    color: $violet-dark;
+                }
+    
+            }
+        }
+    }
+}
+
+.flex-table {
+    .table-cell {
+        padding: 15px 0;
+        display: inline-block;
+        line-height: 1.15;
+
+        @include media("max", "lg") {
+            padding: 5px 0;
+        }
+    }
+
+    @include media("max", "lg") {
+        .flex-table-rows > .row{
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .btn-file {
+            position: absolute;
+            bottom: 0;
+            right: 30px;
+        }
+
+        .btn-actions {
+            position: absolute;
+            top: -5px;
+            right: 3px;
+        }
+    }
+
+    .btn-actions:after {
+        content: none;
+    }
+}

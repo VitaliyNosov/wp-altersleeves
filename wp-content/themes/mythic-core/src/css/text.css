@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;900&display=swap');
+
+body, button, input, optgroup, select, textarea {
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.text-small {
+    font-size:12px;
+}
+
+/** Larger Screens **/
+@media only screen and (min-width:768px) {
+    h1 {
+        font-weight:900;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,7 @@
+.card-display {
+    -webkit-border-radius: 4.75% / 3.5%;
+    border-radius: 4.75% / 3.5%;
+    -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.45);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.45);
+    margin: 0 auto;
+}

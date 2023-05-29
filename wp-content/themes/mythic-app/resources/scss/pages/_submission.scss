@@ -1,0 +1,51 @@
+.submission-page-content {
+    padding: 3rem 0 5rem;
+    background: $dark-gray;
+    .page-title {
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+        font-size: 36px;
+
+        @include media("max", "md") {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .form-control {
+        margin-bottom: 1rem;
+    }
+
+    .upload-container {
+        margin-top: 5rem;
+        padding: 2rem 3rem;
+        background: #fff;
+
+        @include media("max", "md") {
+            padding: 2rem;
+            margin-top: 1.5rem;
+        }
+    }
+
+    @include media("max", "md") {
+        .submission-title {
+            font-size: 20px;
+        }
+    }
+
+    .submit-container {
+        margin-top: 7rem;
+        text-align: right;
+
+        @include media("max", "md") {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            width: 100%;
+            background: $dark-gray;
+        }
+    }
+}
+

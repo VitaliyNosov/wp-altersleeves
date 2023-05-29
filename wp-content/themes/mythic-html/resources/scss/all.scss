@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;400;500;700;900&display=swap');
+@import "~slick-carousel/slick/slick";
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/bootstrap-utilities";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/dropdown";
+@import 'global/mixins';
+@import 'global/variables';
+@import 'global/mg-icons';
+@import 'global/base';
+
+@import "components/buttons";
+@import "components/product-card";
+@import "components/product-card-mini";
+@import "components/forms";
+@import "components/login-box";
+@import "components/quantity-input";
+@import "components/summary-sidebar";
+@import "components/profile-card";
+@import "components/article-card";
+@import "components/cookies-accept";
+
+@import "header/all";
+@import "footer/main";
+
+@import "pages/single-product";
+@import "pages/account";
+@import "pages/login";
+@import "pages/cart";
+@import "pages/checkout";
+@import "pages/search-results";
+@import "pages/general-page";
+@import "pages/profile-page";
+@import "pages/submission";
+@import "pages/home";
+@import "pages/bureau";
+
+

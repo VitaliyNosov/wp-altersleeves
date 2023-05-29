@@ -1,0 +1,98 @@
+.summary-sidebar {
+    .sidebar-box {
+        padding: 2rem 3rem;
+        background: #fff;
+        margin-bottom: 1rem;
+
+        .box-title {
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        @include media("max", "xl") {
+            padding: 1.5rem;
+        }
+    }
+
+    .cart-summary {
+        .summary-table {
+            font-size: 14px;
+
+            .row {
+                margin-bottom: 1rem;
+            }
+
+            .decription {
+                font-size: 13px;
+                font-weight: lighter;
+                line-height: 15px;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .cart-coupon {
+        .coupon-result {
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: lighter;
+        }
+
+        .coupon-discount {
+            margin-top: 2rem;
+
+            .discount-value {
+                color: $primary;
+            }
+        }
+
+        .form-control {
+            background: $primary;
+            color: #fff;
+        }
+
+        .form-control-label {
+            font-size: 13px;
+            font-weight: lighter;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .input-group-text {
+            background: #fff;
+
+            .button {
+                font-size: 13px;
+                color: $primary;
+
+                &:hover {
+                    color: $accent;
+                }
+            }
+        }
+    }
+
+    .cart-total {
+        padding: 3rem;
+        background: $violet-dark;
+        color: #fff;
+
+        .proceed-to-checkout-submit {
+            margin-top: 1rem;
+            width: 100%;
+            font-weight: lighter;
+        }
+
+        @include media("max", "xl") {
+            padding: 1rem;
+        }
+    }
+
+    .terms-fields {
+        background: #fff;
+
+        .form-check:first-child {
+            margin-bottom: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+:root {
+    --color-bg: #E6E6E5;
+    --color-mg-purple: rgba(24, 9, 40, 1);
+    --color-mg-purple-faded: rgba(24, 9, 40, 0.5);
+    --color-mg-orange: #FC6A29;
+    --color-mg-orange-faded: rgba(252, 106, 41, 0.5);
+    --color-mg-orange-soft: rgba(251,105,41,1);
+    --color-mg-orange-gradient-start: rgba(225,64,34,1);
+    --color-as-blue: #2C9AC2;
+    --color-as-pink: #F95C6C;
+    --gradient-mg-orange-horizontal: linear-gradient(90deg, rgba(225,64,34,1) 0%, rgba(225,64,34,1) 25%, rgba(251,105,41,1) 50%, rgba(225,64,34,1) 75%, rgba(225,64,34,1) 100%);
+}

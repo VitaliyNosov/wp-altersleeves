@@ -1,0 +1,28 @@
+.product-card-mini {
+    padding: 1rem 2rem;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+
+    .product-title {
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    .product-thumbnail {
+        
+        flex: 0 0 40%;
+    }
+
+    .product-body {
+        padding: 0.5rem 0 1rem 0.5rem;
+        flex: 0 0 60%;
+        font-size: 13px;
+    }
+
+    .added-qty {
+        margin-bottom: 0.5rem;
+    }
+    
+}

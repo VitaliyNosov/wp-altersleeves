@@ -1,0 +1,141 @@
+.site-footer {
+    background: $violet-dark;
+    
+    .footer-main {
+        padding: 3rem 0 1rem;
+
+        @include media("max", "md") {
+            padding: 3rem 1rem 1rem;
+        }
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding: 15px;
+        background: #000;
+        color: #fff;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .footer-logo {
+        width: 300px;
+        margin: 0 auto 2rem;
+
+        .link-home {
+            display: block;
+        }
+
+        @include media("max", "md") {
+            width: 150px;
+        }
+    }
+
+    .footer-nav {
+        .menu {
+            list-style-type: none;
+        }
+        .menu-item {
+            padding: 5px 0;
+            margin-bottom: 10px;
+
+            .menu-link {
+                color: #fff;
+
+                &:hover {
+                    color: $primary;
+                }
+
+                @include media("max", "md") {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &.nav-primary {
+            .menu-item {
+                .menu-link {
+                    color: $primary;
+
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-social {
+        text-align: center;
+        padding-right: 30%;
+
+        .social-link {
+            color: $primary;
+            font-size: 30px;
+            margin-bottom: 25px;
+
+            @include media("max", "md") {
+                font-size: 25px;
+            }
+        }
+
+        @include media("max", "sm") {
+            padding-right: 0;
+            display: flex;
+            margin: 1.5rem 0;
+            max-width: 350px;
+            justify-content: space-between;
+        }
+    }
+
+    .subscribe-box {
+        .subscribe-title {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 1.5rem;
+            max-width: 125px;
+
+            @include media("max", "md") {
+                max-width: unset;
+                font-size: 14px;
+            }
+        }
+
+        .form-field {
+            border: none;
+            background: #fff;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+
+            ::placeholder {
+                font-size: 13px;
+            }
+            
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+
+        .button {
+            width: 100%;
+        }
+    }
+
+    .footer-payments-line {
+        margin-top: 2.5rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .payment-item {
+            margin-right: 20px;
+
+            @include media("max", "md") {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+}

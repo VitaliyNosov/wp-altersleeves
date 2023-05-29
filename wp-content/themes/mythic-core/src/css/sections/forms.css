@@ -1,0 +1,11 @@
+main {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-start .icon-logo {
+    display:block;
+    max-height:60px;
+}
+

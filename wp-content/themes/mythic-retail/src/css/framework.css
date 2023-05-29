@@ -1,0 +1,158 @@
+.brand-color {
+    color:var(--color-mg-orange);
+}
+
+/** bootstrap fixes **/
+
+.form-check-input:checked {
+    background-color: var(--color-mg-orange);
+    border-color: var(--color-mg-orange);
+}
+
+.form-check-input:focus {
+    background-color: var(--color-mg-orange-faded);
+    border-color: var(--color-mg-orange-faded);
+}
+
+/** calls to action **/
+
+.button,
+a.button,
+button[type="submit"],
+input[type="submit"] {
+    text-transform: uppercase !important;
+    border-radius: 40px !important;
+    color: #FFFFFF !important;
+    background: var(--gradient-mg-orange-horizontal) !important;
+    background-color: transparent !important;
+    font-weight: 900 !important;
+    border-color: transparent !important;
+    padding: 0.25rem 3rem !important;
+    margin: 1rem 0 !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    transition: background-color 1s !important;
+    position: relative !important;
+    line-height:initial !important;
+    font-size:16px !important;
+    text-align:center;
+}
+
+a.button {
+    display:block;
+}
+
+.button:hover,
+a.button:hover,
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+    color: #FFFFFF !important;
+}
+
+.button::before,
+.button::after,
+a.button::before,
+a.button::after,
+button[type="submit"]::before,
+button[type="submit"]::after,
+input[type="submit"]::before,
+input[type="submit"]::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    clear: both;
+}
+
+
+.button::before,
+a.button::before,
+button[type="submit"]::before,
+input[type="submit"]::before {
+    visibility: hidden;
+    left: 0;
+    border-right: 20px solid var(--color-mg-orange-gradient-start);
+    transition: left 0.4s, display 0.5s;
+}
+
+.button::after,
+a.button::after,
+button[type="submit"]::after,
+input[type="submit"]::after {
+    visibility: hidden;
+    right: 0;
+    border-left: 20px solid var(--color-mg-orange-gradient-start);
+    transition: right 0.4s;
+}
+
+.button:hover::before,
+a.button:hover::before,
+button[type="submit"]:hover::before,
+input[type="submit"]:hover::before {
+    visibility: visible;
+    left: -15px;
+}
+
+.button:hover::after,
+a.button:hover::after,
+button[type="submit"]:hover::after,
+input[type="submit"]:hover::after {
+    visibility: visible;
+    right: -15px;
+}
+
+
+/** dashboard **/
+
+.dashboard nav {
+    background: #F5F5F5;
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    background-color: #fc6a29;
+}
+
+
+
+
+/** dashboard **/
+
+main nav {
+    background: #f5f5f5;
+}
+
+main nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+main nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+main nav ul a {
+    padding: 0.5rem 1rem;
+    display: block;
+    font-weight: 600;
+}
+
+main nav ul .is-active a {
+    color: var(--color-mg-purple);
+    background: #FFFFFF;
+}
+
+.flex-control-nav {
+    list-style:none;
+    display:flex;
+    padding:0;
+    margin:0;
+}
+
+.flex-control-nav li {
+    padding:0.25rem;
+}
